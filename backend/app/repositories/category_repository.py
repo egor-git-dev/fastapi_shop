@@ -23,3 +23,4 @@ class CategoryRepository:
         self.db.commit()
         self.db.refresh(db_category)
         return db_category
+
