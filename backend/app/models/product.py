@@ -24,7 +24,11 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import String, Text, Float, Integer, DateTime, ForeignKey
 from datetime import datetime
 from ..database import Base
-from ..models.category import Category
+# from ..models.category import Category
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from .category import Category
 
 
 class Product(Base):
