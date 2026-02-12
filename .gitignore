@@ -47,6 +47,7 @@ dmypy.json
 media/
 staticfiles/
 db.sqlite3
+/shop.db
 
 # Logs
 logs
